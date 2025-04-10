@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmpowerHer Initiative</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #fff5f8;
+      color: #333;
+    }
+    .animated-quote h1 {
+      font-family: 'Pacifico', cursive;
+      color: #c2185b;
+      animation: fadeInGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeInGlow {
+      0% {
+        opacity: 0.7;
+        text-shadow: 0 0 5px #914983, 0 0 10px #94456d;
+      } 
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #994cb5, 0 0 20px #a42eac;
+      }
+    }
+    h2 {
+      color: #c2185b;
+    }
+    table, th, td {
+      border: 1px solid #c2185b;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-top: 10px;
+    }
+    form {
+      background-color: #fce4ec;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    input, select {
+      padding: 5px;
+      margin: 5px 0;
+      width: 100%;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="animated-quote">
+      <h1>💗EmpowerHer Initiative</h1>
+    </div>
+    <p>A feminist organisation advocating for equality,justice and empowerement through education, community, and action.</p>
+  </header>
+
+  <section>
+    <h2>Our Core Principles</h2>
+    <ol type="I">
+      <li>Equality for all genders</li>
+      <li>Access to education</li>
+      <li>Healthcare rights</li>
+      <li>Support for survivors</li>
+      <li>Leadership and empowerment</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Our Vision</h2>
+    <img src="https://images.pexels.com/photos/20336047/pexels-photo-20336047.jpeg"alt="Empowered women" width="400">
+  </section>
+  <section>
+    <h2>Contact Our Regional Leaders</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sara Achieng</td><td>Nairobi</td><td>0720500734</td><td>saraeats@empowerher.org</td></tr>
+        <tr><td>Lucy Wambui</td><td>Kiambu</td><td>0721493287</td><td>luxie35@empowerher.org</td></tr>
+        <tr><td>Naomi Mumo</td><td>Mombasa</td><td>0799088076</td><td>naomidivah@empowerher.org</td></tr>
+        <tr><td>Joy Chebet</td><td>Eldoret</td><td>0709123722</td><td>joycheh@empowerher.org</td></tr>
+        <tr><td>Fatma Ali</td><td>Garissa</td><td>0755485539</td><td>fatmaAli@empowerher.org</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Join the Movement</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="password">Create Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select your gender</option>
+        <option value="female">Female</option>
+        <option value="non-binary">Non-Binary</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="male">Male (Ally)</option>
+      </select>
+
+      <p>Are you joining as a:</p>
+      <input type="radio" id="volunteer" name="role" value="volunteer" required>
+      <label for="volunteer">Volunteer</label><br>
+      <input type="radio" id="beneficiary" name="role" value="beneficiary">
+      <label for="beneficiary">Beneficiary</label><br>
+      <input type="radio" id="sponsor" name="role" value="sponsor">
+      <label for="sponsor">Sponsor</label><br><br>
+
+      <p>Areas you're interested in:</p>
+      <input type="checkbox" id="education" name="interest" value="education">
+      <label for="education">Girls' Education</label><br>
+      <input type="checkbox" id="health" name="interest" value="health">
+      <label for="health">Women's Health</label><br>
+      <input type="checkbox" id="leadership" name="interest" value="leadership">
+      <label for="leadership">Leadership Programs</label><br><br>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EmpowerHer Initiative | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
