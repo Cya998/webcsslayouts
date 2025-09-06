@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Form</title>
+</head>
+<body>
+  <h1>Delivery Form</h1>
+
+  <form action="#" method="post" autocomplete="on">
+    
+    <fieldset>
+      <legend>Order Information</legend>
+
+      <label for="order_id">Order ID (readonly):</label><br>
+      <input type="text" id="order_id" name="order_id" value="BENS-12345" readonly><br><br>
+
+      <label for="order_date">Order Date:</label><br>
+      <input type="date" id="order_date" name="order_date" required><br><br>
+
+      <label for="delivery_date">Preferred Delivery Date:</label><br>
+      <input type="date" id="delivery_date" name="delivery_date" required><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Customer Details</legend>
+
+      <label for="first_name">First Name:</label><br>
+      <input type="text" id="first_name" name="first_name" placeholder="Jane" required autocomplete="given-name"><br><br>
+
+      <label for="last_name">Last Name:</label><br>
+      <input type="text" id="last_name" name="last_name" placeholder="Doe" required autocomplete="family-name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="+254712345678" required autocomplete="tel"><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Delivery Address</legend>
+
+      <label for="address1">Address Line 1:</label><br>
+      <input type="text" id="address1" name="address1" required autocomplete="address-line1"><br><br>
+
+      <label for="address2">Address Line 2:</label><br>
+      <input type="text" id="address2" name="address2" autocomplete="address-line2"><br><br>
+
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city" required autocomplete="address-level2"><br><br>
+
+      <label for="postal">Postal Code:</label><br>
+      <input type="text" id="postal" name="postal" required autocomplete="postal-code"><br><br>
+
+      <label for="county">County:</label><br>
+      <select id="county" name="county" required autocomplete="county">
+        <option value="">Select Country</option>
+        <option value="Nairobi">Nairobi</option>
+        <option value="Kisumu">Kisumu</option>
+        <option value="Eldoret">Eldoret</option>
+        <option value="Mombasa">Mombasa</option>
+        <option value="Nakuru">Nakurus</option>
+      </select><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <label for="product">Product:</label><br>
+      <input type="text" id="product" name="product" required><br><br>
+
+      <label for="quantity">Quantity:</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" max="100" required><br><br>
+
+      <label for="instructions">Delivery Instructions:</label><br>
+      <textarea id="instructions" name="instructions" placeholder="Leave at the gate, call on arrival..." maxlength="300"></textarea><br><br>
+    </fieldset>
+    <br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions.</label><br><br>
+
+    <input type="submit" value="Submit Order">
+    <input type="reset" value="Reset Form">
+
+  </form>
+</body>
+</html>
